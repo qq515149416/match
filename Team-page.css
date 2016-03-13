@@ -16,6 +16,11 @@ li,ul{
 	list-style: none;
 }
 
+.Main-page{
+	width: 80%;
+	margin: 0 auto;
+}
+
 .team-bar{
 	height: 80px;
 	width: 70%;
@@ -50,7 +55,6 @@ li,ul{
 	width: 70%;
 	margin: 0 auto;
 	margin-top: 8px;
-	margin-bottom: 8px;
 }
 
 .top-bar{
@@ -68,7 +72,7 @@ li,ul{
 .team-photo{
 	margin-top: 8px;
 	width: 100%;
-	height: 500px;
+	height: 400px;
 	overflow: hidden;
 }
 
