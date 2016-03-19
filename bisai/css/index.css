@@ -1,0 +1,213 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family:"Microsoft Yahei";
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+html,body{
+	width:100%;
+	height:100%;
+	min-width:1200px;
+}
+/*主容器*/
+#main{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+/*end主容器*/
+/*头部样式*/
+div.header{
+	width:100%;
+	height:57px;
+	background-color:#3399cc;
+	position:relative;
+}
+div.header img{
+	margin:10px 30px;
+	float:left;
+}
+div.header form{
+	float:right;
+	position:relative;
+}
+.icon{
+	width:20px;
+	height:20px;
+}
+div.header form div.icon{
+	background-image:url("../images/sc.png");
+	position:absolute;
+	top:13px;
+	left:10px;
+}
+div.header form input{
+	width:200px;
+	padding:5px 40px;
+	border-radius:20px;
+	margin:10px 150px 0px 0px;
+	border:1px solid #ccccff;
+}
+div.header a{
+	color:#fff;
+	position:absolute;
+	padding:6px 22px;
+	right:60px;
+	top:10px;
+	font-size:12px;
+}
+div.header a div.icon{
+	position:absolute;
+	top:5px;
+	left:0px;
+	background-image:url("../images/user.png");
+}
+/*end头部样式*/
+/*左侧样式*/
+div.left{
+	width:254px;
+	height:94%;
+	background-color:#333333;
+	float:left;
+}
+div.left div.user{
+	width:260px;
+	height:148px;
+}
+div.left div.user div.infa{
+	width:100%;
+	height:80px;
+}
+div.left div.user div.infa ul{
+	margin-left:40px;
+	color:#fff;
+}
+div.left div.user div.infa ul li{
+	float:left;
+	padding:0px 20px;
+	border-right:1px solid #666699;
+	color:#666699;
+	font-size:12px;
+}
+div.left div.user div.infa ul li a{
+	margin-left:1px;
+	color:#666699;
+}
+div.left div.user div.infa ul li.none{
+	border-right:none;
+}
+div.left div.user div.hp{
+	width:50px;
+	height:50px;
+	padding:5px;
+	border-radius:100%;
+	border:1px solid #fff;
+	margin:20px 50px;
+	position:relative;
+}
+div.left div.user div.hp a{
+	width:50px;
+	position:absolute;
+	top:20px;
+	left:70px;
+	color:#fff;
+}
+div.left div.user div.hp img{
+	border-radius:100%;
+}
+div.left ul.munlist li{
+	width:100%;
+	color:#666699;
+	cursor:pointer;
+	margin-top:10px;
+	padding:5px;
+	font-size:12px;
+}
+div.left ul.munlist li ul.submun li ul.tlmeun li{
+	margin-left:20px;
+}
+div.left ul.munlist li ul.submun li span{
+	position:relative;
+}
+div.left ul.munlist li ul.submun li.subcurr span.curr{
+	color:#fff;
+}
+div.left ul.munlist li ul.submun li.subcurr span em{
+	background-image:url("../images/cfile.png");
+}
+div.left ul.munlist li ul.submun li.subcurr span em.txt{
+	background-image:url("../images/txt.png");
+}
+div.left ul.munlist li ul.submun li.subcurr span em.curr-txt{
+	background-image:url("../images/ctxt.png");
+}
+/*没有的css代码但又不想删*/
+/*
+div.left ul.munlist li ul.submun li.subcurr{
+	
+}*/
+div.left ul.munlist li.curr{
+	color:#fff;
+	background-color:#333366;
+}
+div.left ul.munlist li span.title{
+	margin-left:35px;
+	position:relative;
+}
+div.left ul.munlist li span em{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:-2px;
+	left:-20px;
+}
+div.left ul.munlist li span div.arrow{
+	border-right:5px solid #333366;
+	border-top:5px solid #333366;
+	border-left:5px solid #666699;
+	border-bottom:5px solid #333366;
+	position:absolute;
+	top:2px;
+	left:-30px;
+}
+div.left ul.munlist li.curr span div.curr{
+	border-right:5px solid #333366;
+	border-top:5px solid #fff;
+	border-left:5px solid #333366;
+	border-bottom:5px solid #333366;
+	top:4px;
+}
+div.left ul.munlist li.curr span em.folder{
+		background-image:url("../images/folder.png");
+}
+div.left ul.munlist li span em.collection{
+		background-image:url("../images/Collection.png");
+}
+div.left ul.munlist li span em.share{
+	background-image:url("../images/share.png");
+}
+div.left ul.munlist li span em.money{
+	background-image:url("../images/money.png");
+}
+div.left ul.munlist li span em.file{
+	background-image:url("../images/file.png");
+}
+div.left ul.munlist li ul.submun{
+	width:100px;
+	display:block;
+	margin:10px 0px 0px  60px;
+}
+/*end左侧样式*/
+div.right{
+	background:#eeeeed;
+	position:absolute;
+	top:57px;
+	left:254px;
+	right:0px;
+	bottom:0px;
+}
