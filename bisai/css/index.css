@@ -11,14 +11,12 @@ li{
 }
 html,body{
 	width:100%;
-	height:100%;
-	min-width:1200px;
 }
 /*主容器*/
 #main{
 	width:100%;
-	height:100%;
 	position:relative;
+	min-width:1600px;
 }
 /*end主容器*/
 /*头部样式*/
@@ -71,9 +69,12 @@ div.header a div.icon{
 /*左侧样式*/
 div.left{
 	width:254px;
-	height:94%;
+	height:1000px;
 	background-color:#333333;
 	float:left;
+}
+div.left a{
+	color:#6E8096;
 }
 div.left div.user{
 	width:260px;
@@ -90,13 +91,13 @@ div.left div.user div.infa ul{
 div.left div.user div.infa ul li{
 	float:left;
 	padding:0px 20px;
-	border-right:1px solid #666699;
-	color:#666699;
+	border-right:1px solid #6E8096;
+	color:#6E8096;
 	font-size:12px;
 }
 div.left div.user div.infa ul li a{
 	margin-left:1px;
-	color:#666699;
+	color:#6E8096;
 }
 div.left div.user div.infa ul li.none{
 	border-right:none;
@@ -123,9 +124,8 @@ div.left div.user div.hp img{
 div.left ul.munlist li{
 	width:100%;
 	color:#666699;
-	cursor:pointer;
 	margin-top:10px;
-	padding:5px;
+	padding:5px 0px 5px 0px;
 	font-size:12px;
 }
 div.left ul.munlist li ul.submun li ul.tlmeun li{
@@ -152,8 +152,7 @@ div.left ul.munlist li ul.submun li.subcurr{
 	
 }*/
 div.left ul.munlist li.curr{
-	color:#fff;
-	background-color:#333366;
+	background-color:#484747;
 }
 div.left ul.munlist li span.title{
 	margin-left:35px;
@@ -167,19 +166,19 @@ div.left ul.munlist li span em{
 	left:-20px;
 }
 div.left ul.munlist li span div.arrow{
-	border-right:5px solid #333366;
-	border-top:5px solid #333366;
+	border-right:5px solid #484747;
+	border-top:5px solid #484747;
 	border-left:5px solid #666699;
-	border-bottom:5px solid #333366;
+	border-bottom:5px solid #484747;
 	position:absolute;
 	top:2px;
 	left:-30px;
 }
 div.left ul.munlist li.curr span div.curr{
-	border-right:5px solid #333366;
+	border-right:5px solid #484747;
 	border-top:5px solid #fff;
-	border-left:5px solid #333366;
-	border-bottom:5px solid #333366;
+	border-left:5px solid #484747;
+	border-bottom:5px solid #484747;
 	top:4px;
 }
 div.left ul.munlist li.curr span em.folder{
@@ -202,6 +201,12 @@ div.left ul.munlist li ul.submun{
 	display:block;
 	margin:10px 0px 0px  60px;
 }
+div.left ul.munlist li.curr span.title a{
+	color:#fff;
+}
+div.left ul.munlist li ul.submun li.subcurr span.curr a{
+	color:#fff;
+}
 /*end左侧样式*/
 div.right{
 	background:#eeeeed;
@@ -210,4 +215,319 @@ div.right{
 	left:254px;
 	right:0px;
 	bottom:0px;
+}
+div.right div.right-top{
+	width:100%;
+	height:31px;
+	background-color:#fff;
+}
+div.right div.right-top span.position{
+	color:#c5c5c5;
+	line-height:31px;
+	margin-left:20px;
+}
+div.right div.right-top span.position a{
+	color:#0099ff;
+}
+div.right div.right-content{
+	width:1200px;
+	margin:auto;
+}
+div.right div.right-content div{
+		width:1200px;
+		height:90px;
+}
+div.right div.right-content div.query{
+	background-color:#fff;
+	margin-top:20px;
+	border:1px solid #e1e1e1;
+}
+div.right div.right-content div.query form dl{
+	margin:10px 0px;
+}
+div.right div.right-content div.query form dl dt,dd{
+	float:left;
+	color:#bbbbbb;
+}
+div.right div.right-content div.query form select.nape{
+	padding-right:90px;
+}
+div.right div.right-content div.query form input.btn{
+	padding:5px 10px;
+	background-color:#0066ff;
+	border:1px solid #0066ff;
+	border-radius:3px;
+	color:#fff;
+	margin:20px 30px;
+}
+div.right div.right-content div.query form dl dt{
+	margin:0px 10px 20px 30px;
+}
+div.right div.right-content div.query form dl dt.clear{
+	width:120px;
+}
+div.right div.right-content div.query form dl dd select{
+	padding:2px 5px;
+}
+.clear{
+	clear:both;
+}
+div.right div.right-content div.price{
+	margin:10px 0px;
+}
+div.right div.right-content div.price div{
+	width:30px;
+	height:100%;
+	padding:0px 10px;
+	line-height:90px;
+	background-color:#fff;
+	text-align:center;
+	font-weight:bold;
+	color:#bbb;
+	font-size:30px;
+	border-top:1px solid #bbb;
+	border-left:1px solid #bbb;
+}
+div.right div.right-content div.price li{
+	height:70px;
+	padding:9px 34px;
+	background-color:#fff;
+	margin:0px 5px;
+	border-top:1px solid #bbb;
+	border-left:1px solid #bbb;
+}
+div.right div.right-content div.price li.curr{
+	border-top:2px solid #3399CC;
+}
+div.right div.right-content div.price li span.time{
+	margin-left:10px;
+	font-size:14px;
+}
+div.right div.right-content div.price li span.rmb{
+	float:left;
+	margin-top:8px;
+	color:#bbb;
+}
+div.right div.right-content div.price li h2{
+	float:right;
+	color:#ff9900;
+}
+div.right div.right-content div.price div.history{
+	margin-left:5px;
+	width:126px;
+	height:80px;
+	padding:5px 20px;
+	position:relative;
+}
+div.right div.right-content div.price div.history span{
+	color:#000;
+	font-size:12px;
+	margin-left:50px;
+	margin-top:-8px;
+	float:left;
+}
+div.right div.right-content div.price div.history em{
+	width:37px;
+	height:37px;
+	position:absolute;
+	top:25px;
+	left:25px;
+	background-image:url("../images/history.png");
+}
+div.right div.right-content div.price div,li{
+	float:left;
+}
+div.right div.right-content div.stat{
+	margin:20px 0px;
+	height:100px;
+}
+div.right div.right-content div.stat p{
+	margin:10px 0px 5px 0px;
+}
+div.right div.right-content div.stat ul li{
+	padding:10px 0px 20px 0px;
+	margin-right:20px;
+	width:276px;
+	height:60px;
+	background-color:#fff;
+	position:relative;
+	border:1px solid #e1e1e1;
+	font-size:14px;
+	color:#bbb;
+}
+div.right div.right-content div.stat ul li div{
+	width:60px;
+	height:46px;
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+div.right div.right-content div.stat ul li.green{
+	border-left:2px solid #0f0;
+}
+div.right div.right-content div.stat ul li div.green{
+	background-color:#0f0;
+}
+div.right div.right-content div.stat ul li.blue{
+	border-left:2px solid #00f;
+}
+div.right div.right-content div.stat ul li div.blue{
+	background-color:#00f;
+}
+div.right div.right-content div.stat ul li.rad{
+	border-left:2px solid #f00;
+}
+div.right div.right-content div.stat ul li div.rad{
+	background-color:#f00;
+}
+div.right div.right-content div.stat ul li.yellow{
+	border-left:2px solid #ffff00;
+}
+div.right div.right-content div.stat ul li div.yellow{
+	background-color:#ffff00;
+}
+div.right div.right-content div.stat ul li p{
+	margin:10px 0px 0px 30px;
+}
+div.right div.right-content div.stat ul li h3{
+	margin:10px 0px 0px 30px;
+	color:#000;
+}
+div.right div.right-content div.stat ul li.none-margin{
+	margin-right:0px;
+	padding-right:22px;
+}
+div.right div.right-content div.project{
+	height:353px;
+	margin:30px 0px;
+}
+div.right div.right-content div.project div.project-one{
+	width:680px;
+	height:100%;
+	border-radius:10px;
+	border:1px solid #D6D6D6;
+	float:left;
+}
+div.right div.right-content div.project div.project-one div.title{
+	width:100%;
+	height:40px;
+	background-image:url("../images/title_bg.png");
+	margin-top:5px;
+	color:#bbb;
+	border-bottom:1px solid #D6D6D6;
+}
+div.right div.right-content div.project div.project-one div.title span{
+	margin:5px 0px 0px 10px;
+	float:left;
+}
+div.right div.right-content div.project div.project-one div.description ul.project-menu{
+	width:640px;
+	height:250px;
+	margin:20px 20px;
+	position:relative;
+}
+div.right div.right-content div.project div.project-one div.description ul.project-menu li{
+	width:70px;
+	height:30px;
+	margin-right:5px;
+	background-color:#e1e1e1;
+	text-align:center;
+	line-height:30px;
+	border:1px solid #e1e1e1;
+}
+div.right div.right-content div.project div.project-one div.description ul.project-menu li div.table{
+	width:640px;
+	height:220px;
+	border:1px solid #bbb;
+	position:absolute;
+	top:30px;
+	left:0px;
+	display:none;
+}
+div.right div.right-content div.project div.project-one div.description ul.project-menu li div.table ul.table-list{
+	width:400px;
+	height:220px;
+	margin:10px auto;
+}
+div.right div.right-content div.project div.project-one div.description ul.project-menu li div.table ul.table-list li{
+	width:96px;
+	height:30px;
+	margin:0px;
+	border:1px solid #bbb;
+	background-color:#fff;
+}
+div.right div.right-content div.project div.project-one div.description ul.project-menu li.curr{
+	background-color:#fff;
+	border:1px solid #bbb;
+	border-bottom:none;
+}
+div.right div.right-content div.project div.project-one div.description ul.project-menu li.curr div.mask{
+	width:70px;
+	height:10px;
+	position:absolute;
+	top:-2px;
+	left:0px;
+	background-color:#fff;
+}
+div.right div.right-content div.project div.project-one div.description ul.project-menu li.curr div.table{
+	display:block;
+}
+div.right div.right-content div.project div.porject-tow{
+	float:left;
+	width:450px;
+	margin-left:30px;
+	height:355px;
+	border:1px solid #e1e1e1;
+	border-radius:10px;
+}
+div.right div.right-content div.project div.porject-tow h4,p,form{
+	color:#bbb;
+}
+div.right div.right-content div.project div.porject-tow h4{
+	margin:10px 20px;
+}
+div.right div.right-content div.project div.porject-tow div{
+	width:350px;
+	height:50px;
+	margin:0px 0px 0px 50px;
+
+}
+div.right div.right-content div.project div.porject-tow div h3{
+	font-size:16px;
+	font-weight:lighter;
+}
+div.right div.right-content div.project div.porject-tow div p,h3{
+	margin-left:20px;
+}
+div.right div.right-content div.project div.porject-tow div.porject-tow-title{
+	height:55px;
+	margin-top:30px;
+	border-bottom:1px solid #e1e1e1;
+}
+div.right div.right-content div.project div.porject-tow div.porject-tow-description ul.list li{
+	height:50px;
+}
+div.right div.right-content div.project div.porject-tow div.porject-tow-description ul.list li.Price{
+	width:100px;
+	border-right:1px solid #e1e1e1;
+}
+div.right div.right-content div.project div.porject-tow div.porject-tow-description ul.list li.pic{
+		width:200px;
+}
+div.right div.right-content div.project div.porject-tow div.porject-tow-flooer{
+	height:120px;
+	border-top:1px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
+}
+div.right div.right-content div.project div.porject-tow div.form form input{
+	margin-top:10px;
+}
+div.right div.right-content div.project div.porject-tow div.form form input.submit{
+	float:right;
+	margin-right:20px;
+	padding: 5px 10px;
+    background-color: #0066ff;
+    border: 1px solid #0066ff;
+    border-radius: 3px;
+    color: #fff;
 }
