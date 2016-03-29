@@ -1,0 +1,35 @@
+/*圣杯布局*/
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.main{
+	padding-left: 200px;
+	padding-right: 120px;
+}
+
+section{
+	width: 100%;
+	float: left;
+	background-color: #eee;
+}
+
+.left{
+	width: 200px;
+	float: left;
+	margin-left: -100%;
+	position: relative;
+	left: -200px;
+	background-color: red;
+}
+
+.right{
+	width: 120px;
+	float: left;
+	margin-left: -120px;
+	position: relative;
+	right: -120px;
+	background-color: yellow;
+}

@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: "Microsoft YaHei"
+}
+
+h2,h3,p{
+	padding-bottom: 12px;
+}
+
+p{
+	line-height: 150%;
+}
+
+body{
+	background-color: #EBF4F3;
+}
+
+header{
+	height: 50px;
+	background-color: #821F16;
+}
+
+/*设置全文相关段落首航缩进*/
+.indent{
+	text-indent: 32px;
+}
+
+.logo{
+	height: 50px;
+	width: 10%;
+	margin-left: 30px;
+	display: inline-block;
+}
+
+nav{ 
+	height: 50px;
+	width: 25%;
+	float: right;
+	/*display: inline-block;*/
+}
+
+nav li{
+	list-style: none;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	width: 33%;
+}
+
+nav li a{
+	text-decoration: none;
+	color: white;
+}
+
+section{
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.article-{
+	padding: 30px 20px;
+	margin: 30px 0;
+	background-color: white;
+	-moz-box-shadow:#648C7F 2px 2px 5px;
+	-webkit-box-shadow:#648C7F 2px 2px 5px;
+	box-shadow:#648C7F 2px 2px 5px;	
+	overflow: hidden; /*这一句代码是我了清除浮动产生的“高度坍塌”*/
+}
+
+.article-two li{
+	list-style: none;
+	padding-left: 30px;
+}
+
+figure{
+	width: auto;
+	height: auto;
+	border:1px solid black;
+	margin-left: 55px;
+	margin-bottom: 20px;
+	float: left;
+	clear: left;	/*这句代码是为了清除figure属性左边的浮动,这样能使几个图片显示在一列而不是一行*/
+	padding: 10px;
+}
+
+figcaption{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+ol{
+	margin-left: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.table-p{
+	padding:0;
+}
+
+.article-four table{
+	border-collapse: collapse;
+	width: 100%;
+	border-style: 1px solid #DDD7D7;
+}
+
+.article-four table th,td{
+	padding:4px;
+}
+
+.article-four thead{
+	background-color: #470909;
+	color: white;
+}
+
+.article-four tfoot{
+	background-color: #DDD7D7;
+}
+
+.sidebar{
+	border-left: 3px solid #CCC7C7;
+	padding-left: 20px;
+	padding: 5px 20px;
+}
+
+.last-article table{
+	margin-left: 30%;
+}
+
+.side{
+	width: 150px;
+	text-align: right;
+}
+
+.gray-word{
+	color: #6C8980;
+	font-size: 14px;
+}
+
+.area textarea{
+	width: 600px;
+	height: 80px;
+}
+
+input[type = "submit"]{
+	width: 100%;
+	background-color: #4B55DD;
+	padding: 10px 0;
+	text-align: center;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius: 10px;
+}
+
+footer{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	background-color: #821F16;
+	color: white;
+}
