@@ -103,6 +103,14 @@ window.onload=function(){
 			his=command.length+1;
 		}
 	}
+	oBtn2.onclick=function(){
+		his=0;
+		command=[];
+		num=1;
+		row=0;
+		len=1;
+		oTxt.value="";
+	}
 	//生成顶部的li（10个）
 	createli(oTop,10,true);
 	//生成左侧的li（10个）
@@ -110,6 +118,7 @@ window.onload=function(){
 	//生成大格的li（119个）
 	createli(oContent,120,false);
 	//生成li的方法
+	alert("代码说明:参数一:TAR平移命令,MOV转弯命令,GO自动向前命令(它会根据目标元素的方向决定向那个方向前进)参数二:前后左右(GO命令没有)参数三:数值");
 	function createli(obj,num,bool){
 		for(var i=0;i<=num;i++){
 			var aLi=document.createElement("li");
@@ -146,25 +155,25 @@ window.onload=function(){
 					if(parseInt(getStyle(oTar,"top"))<=0){
 						oTar.style.top=0+"px";
 					}else{
-						move(oTar,{top:-52*arr[1]});
+						oTar.style.top=parseInt(getStyle(oTar,"top"))-52*arr[1]+"px";
 					}
 			}else if(angle==180){
 				if(parseInt(getStyle(oTar,"top"))>=520){
 					oTar.style.top=520+"px";
 				}else{
-					move(oTar,{top:52*arr[1]});
+					oTar.style.top=parseInt(getStyle(oTar,"top"))+52*arr[1]+"px";
 				}
 			}else if(angle==270){
 					if(parseInt(getStyle(oTar,"left"))<=0){
 						oTar.style.left=0+"px";
 					}else{
-						move(oTar,{left:-52*arr[1]});
+						oTar.style.left=parseInt(getStyle(oTar,"left"))-52*arr[1]+"px";
 					}
 			}else if(angle==90){
 					if(parseInt(getStyle(oTar,"left"))>=520){
 						oTar.style.left=520+"px";
 					}else{
-						move(oTar,{left:52*arr[1]});
+						oTar.style.left=parseInt(getStyle(oTar,"left"))+52*arr[1]+"px";
 					}
 			}
 		break;
@@ -174,25 +183,25 @@ window.onload=function(){
 					if(parseInt(getStyle(oTar,"left"))<=0){
 						oTar.style.left=0+"px";
 					}else{
-						move(oTar,{left:-52*arr[2]});
+						oTar.style.left=parseInt(getStyle(oTar,"left"))-52*arr[2]+"px";
 					}
 				}else if(index==2){
 					if(parseInt(getStyle(oTar,"left"))>=520){
 						oTar.style.left=520+"px";
 					}else{
-						move(oTar,{left:52*arr[2]});
+						oTar.style.left=parseInt(getStyle(oTar,"left"))+52*arr[2]+"px";
 					}
 				}else if(index==3){
 					if(parseInt(getStyle(oTar,"top"))>=520){
 						oTar.style.top=520+"px";
 					}else{
-						move(oTar,{top:52*arr[2]});
+						oTar.style.top=parseInt(getStyle(oTar,"top"))+52*arr[2]+"px";
 					}
 				}else if(index==4){
 					if(parseInt(getStyle(oTar,"top"))<=0){
 						oTar.style.top=0+"px";
 					}else{
-						move(oTar,{top:-52*arr[2]});
+						oTar.style.top=parseInt(getStyle(oTar,"top"))-52*arr[2]+"px";
 					}
 				}
 			});
@@ -203,7 +212,7 @@ window.onload=function(){
 					if(parseInt(getStyle(oTar,"left"))<=0){
 						oTar.style.left=0+"px";
 					}else{
-						move(oTar,{left:-52*arr[2]});					
+						oTar.style.left=parseInt(getStyle(oTar,"left"))-52*arr[2]+"px";					
 					}
 					angle=270;
 					oTar.style.transform="rotate("+angle+"deg)";
@@ -211,7 +220,7 @@ window.onload=function(){
 					if(parseInt(getStyle(oTar,"left"))>=520){
 						oTar.style.left=520+"px";
 					}else{
-						move(oTar,{left:52*arr[2]});
+						oTar.style.left=parseInt(getStyle(oTar,"left"))+52*arr[2]+"px";
 					}
 					angle=90;
 					oTar.style.transform="rotate("+angle+"deg)";
@@ -219,7 +228,7 @@ window.onload=function(){
 					if(parseInt(getStyle(oTar,"top"))>=520){
 						oTar.style.top=520+"px";
 					}else{
-						move(oTar,{top:52*arr[2]});
+						oTar.style.top=parseInt(getStyle(oTar,"top"))+52*arr[2]+"px";
 					}
 					angle=180;
 					oTar.style.transform="rotate("+angle+"deg)";
@@ -227,7 +236,7 @@ window.onload=function(){
 					if(parseInt(getStyle(oTar,"top"))<=0){
 						oTar.style.top=0+"px";
 					}else{
-						move(oTar,{top:-52*arr[2]});
+						oTar.style.top=parseInt(getStyle(oTar,"top"))-52*arr[2]+"px";
 					}
 					angle=0;
 					oTar.style.transform="rotate("+angle+"deg)";

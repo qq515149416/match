@@ -1,11 +1,16 @@
 // JavaScript Document
 function move(obj,json,fn){
+	clearInterval(obj.time);
 	obj.time=setInterval(function(){
 		//获取自身属性样式
-		obj.onOff=false;
+		var onOff=true;
 		for(var attr in json){
+			console.log(attr);
 			if(attr=="opacity"){
 				var itself=parseInt(parseFloat(getStyle(obj,attr))*100);
+				if(isNaN(itself)){
+					itself=100;
+				}
 			}else{
 				var itself=parseInt(getStyle(obj,attr));
 			}
@@ -15,6 +20,9 @@ function move(obj,json,fn){
 			}else{
 				var iSpeed=Math.floor((json[attr]-itself)/5);
 			}
+			if(itself!=json[attr]){
+				onOff=false;
+			}
 			//执行运动效果
 			if(attr=="opacity"){
 				obj.style[attr]=(itself+iSpeed)/100;
@@ -22,11 +30,10 @@ function move(obj,json,fn){
 			}else{
 				obj.style[attr]=itself+iSpeed+"px";
 			}
-			obj.onOff=true;
 		}
-		console.log(obj.onOff);
 		//停止条件
-		if(!obj.onOff){
+		if(onOff){
+			console.log(json[attr]);
 			if(fn){
 				fn();
 			}
