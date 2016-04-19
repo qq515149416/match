@@ -1,0 +1,114 @@
+/*
+	1.把#top li的宽度设置为#content li的一半，高度度上下加5px的内边距
+	2.把#leftli的高度设置为#content li的一半，宽度度上下加5px的内边距
+	3.#content宽度是所有#top li*2
+	4.#content高度是所有#left li*2
+*/
+/*
+	要变化的属性：
+		line-height:50px;
+		width:50px;
+		height:50px;
+*/
+*{
+	margin:0px;
+	padding:0px;
+}
+li{
+	list-style:none;
+	text-align:center;
+	line-height:50px;
+	font-weight:bold;
+}
+.clear{
+	clear:both;
+}
+#top{
+	margin-left:25px;
+}
+#top li{
+	width:50px;
+	float:left;
+	margin:0px 1px;
+}
+#left{
+	clear:both;
+	float:left;
+}
+#left li{
+	padding:0px 5px;
+	height:50px;
+	margin:1px 0px;
+}
+#content{
+	float:left;
+	width:575px;
+	border:1px solid #000;
+	position:relative;
+}
+#content li{
+	width:50px;
+	height:50px;
+	border:1px solid #e8e8e8;
+	float:left;
+}
+#iet,#re{
+	margin:10px 0px;
+}
+#iet{
+	margin-left:20px;
+}
+
+div.index{
+	width:20px;
+	height:200px;
+	float:left;
+	margin-left:20px;
+	background-color:#bbb;
+	overflow:hidden;
+	position:relative;
+}
+#history{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	z-index:99;
+}
+#history li{
+	height:auto;
+	line-height:5px;
+	padding:5px 0px;
+	font-weight:inherit;
+}
+#history li.red{
+	background-color:#f00;
+}
+#text{
+	width:300px;
+	height:200px;
+	background-color:#000;
+	color:#0f0;
+}
+#target{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:50px;
+	height:50px;
+	background-color:#00f;
+	transform-origin:center;
+	-moz-transform-origin:center;
+	-webkit-transform-origin:center;
+	transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+}
+#target div{
+	width:100%;
+	height:10px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#f00;
+}

@@ -1,0 +1,39 @@
+<!dcotype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>模拟命令行</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/move.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<!--
+			需求：实现格子布局
+			思路：用三个ul li顶部一个，侧边一个，中间用一个大的ul li实现，顶部和右边的ul li是大ul li的一半的宽度，下面做两个按钮然后用textarea接受输入命令
+			步骤：1,先做顶部ul li创建10个宽度是大ul li一半的li 2，然后做侧边部ul li创建10个高度度是大ul li一半的li  3，创建一个大的ul里面创建100个li 4，创建两个按钮 5，创建textarea 6，在侧边创建一个ul li做记录第几行命令
+		-->
+		<ul id="top">
+
+		</ul>
+		<ul id="left">
+
+		</ul>
+		<ul id="content">
+			<li id="target">
+				<div></div>
+			</li>
+		</ul>
+		<div class="clear"></div>
+		<div>
+		<button id="iet">执行</button>
+		<button id="re">Refresh</button>
+		</div>
+		<div class="index" id="container">
+			<ul id="history">
+				<li>1</li>
+			</ul>
+		</div>
+		<textarea id="text"></textarea>
+	</body>
+</html>

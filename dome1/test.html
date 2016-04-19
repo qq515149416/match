@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	#box{
+		width:100px;
+		height:100px;
+		position:absolute;
+		left:0px;
+		top:0px;
+		background-color:#f00;
+	}
+  </style>
+  <script src="js/move.js"></script>
+  <script>
+	window.onload=function(){
+		var oDiv=document.getElementById("box");
+		move(oDiv,{left:300,top:600});
+	}
+  </script>
+ </head>
+ <body>
+	<div id="box"></div>
+ </body>
+</html>
